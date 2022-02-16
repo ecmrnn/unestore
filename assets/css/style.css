@@ -27,7 +27,7 @@
     /* DISPLAY */
     font-family: 'Roboto', sans-serif;
     /* DESIGN */
-
+    line-height: 1.6;
     /* MISC */
     transition: all 0.25s ease-in-out;
 }
@@ -36,6 +36,8 @@
     --clr-accent: hsl(26, 100%, 50%);
     --clr-light: hsl(0, 0%, 100%);
     --clr-dark: hsl(26, 100%, 40%);
+
+    --bradius: 1em;
 }
 
 :focus {
@@ -165,11 +167,22 @@ header > .container{
         align-items: center;
         background-color: var(--clr-accent);
     }
+    header > .container{
+        border-radius: var(--bradius) var(--bradius) 0 0;
+    }
     main {
+        padding: 2em 0;
         background-color: var(--clr-light);
-        height: 464.367px;
+        border-radius: 0 0 var(--bradius) var(--bradius);
+    }
+    main > .container {
+        padding: 0 2em;
+        height: 28em;
+        
+        background-color: var(--clr-light);
         overflow: auto;
         overflow-x: hidden;
         scrollbar-width: thin;
+        scrollbar-color: var(--clr-dark) var(--clr-light);
     }
 }

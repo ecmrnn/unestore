@@ -1,4 +1,4 @@
-// Search Function
+// Search Function - galing lang to w3schools...
 
 function searchProduct() {
     // Declaring Variables
