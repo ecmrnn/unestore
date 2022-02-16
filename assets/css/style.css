@@ -1,0 +1,80 @@
+/* FONTS USED */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+/* ================= */
+/* TABLE OF CONTENTS 
+
+    1) GLOBAL VARIABLES 
+    2) TYPOGRAPHY
+    3) LAYOUT
+    4) UTILITIES
+    5) COMPONENTS
+
+   ================= */
+
+/* ================= */
+/* GLOBAL VARIABLES  */
+/* ================= */
+
+*,
+*::before,
+*::after {
+    /* BOX MODEL */
+    margin: 0;
+    padding: 0;
+
+    /* DISPLAY */
+
+    /* DESIGN */
+
+    /* MISC */
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0.5em 0;
+}
+
+p {
+    margin-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ================= */
+/*    TYPOGRAPHY     */
+/* ================= */
+
+.header__desc {
+    text-align: center;
+}
+
+/* ================= */
+/*      LAYOUT       */
+/* ================= */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================= */
+/*     UTILITIES     */
+/* ================= */
+
+/* ================= */
+/*    COMPONENTS     */
+/* ================= */
+
+.btn {
+    padding: 0.5em;
+}
+
