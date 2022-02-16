@@ -120,6 +120,11 @@ header > .container{
     display: block;
 }
 
+.product__empty {
+    display: none;
+    flex-direction: column;
+}
+
 /* ================= */
 /*     UTILITIES     */
 /* ================= */
