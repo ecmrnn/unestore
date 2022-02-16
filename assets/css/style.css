@@ -93,11 +93,18 @@ p, label {
     padding: 2em;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--clr-light);
+}
+
 header > .container{
-    border-bottom: 1px dashed var(--clr-accent);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    border-bottom: 1px dashed var(--clr-accent);
 }
 
 .product__container {
