@@ -132,6 +132,7 @@ header > .container{
 }
 
 .input__search {
+    text-transform: uppercase;
     padding-left: 1em;
     background-color: hsl(0, 0%, 90%);
 }
