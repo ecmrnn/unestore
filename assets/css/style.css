@@ -102,6 +102,9 @@ header > .container{
 
 .product__container {
     margin-top: 1em;
+
+    display: grid;
+    gap: 1em;
 }
 
 .product {
