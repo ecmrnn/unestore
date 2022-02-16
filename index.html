@@ -11,16 +11,27 @@
     <script src="https://kit.fontawesome.com/5a09ba7eb5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <h1 class="header__title">Unestore</h1>
-            <p class="header__desc">Lagi mo nalang ba nakakalimutan ang presyo ng paninda ni nanay? Edi isearch mo ditong bobo ka.</p>
-            <div class="search">
-                <input type="search" name="Search Button" class="btn btn--search" id="srchBtn" placeholder="Nescafe">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <p class="header__desc">Lagi mo nalang ba nakakalimutan ang presyo ng paninda ni nanay? <!-- <br /><br /> Edi isearch mo ditong bobo ka. --></p>
+            <form action="" class="search">
+                <label for="searchInp">Search:</label><br />
+                <input type="search" name="Search Button" class="inp--search" id="searchInp" placeholder="Nescafe">
+                <button class="btn--search" type="submit" id="searchBtn">
+                    <i class="fa">&#xf002;</i>
+                </button>
+            </form>
         </div>
     </header>
+    <!-- Main Body -->
+    <main class="main">
+        <div class="container">
+            <h2>Notice!</h2>
+            <p>Ang lahat ng produktong ginamit dito ay ekslusibong binebenta lamang sa tindahan ng aking nanay. Thank you!</p>
+        </div>
+    </main>
 
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
