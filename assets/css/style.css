@@ -35,7 +35,7 @@
 :root {
     --clr-accent: hsl(26, 100%, 50%);
     --clr-light: hsl(0, 0%, 100%);
-    --clr-dark: hsl(26, 100%, 25%);
+    --clr-dark: hsl(26, 100%, 40%);
 }
 
 :focus {
@@ -47,10 +47,18 @@
 /*    TYPOGRAPHY     */
 /* ================= */
 
-h1, h2 {
+h1, 
+h2, 
+h3 {
+    margin-bottom: 0.5em;
     color: var(--clr-accent);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: .875em;
+    
 }
 
 .header__desc {
@@ -93,10 +101,18 @@ header > .container{
     background-color: hsl(0, 0%, 90%);
 }
 
+.input__search:focus::placeholder {
+    color: transparent;
+}
+
 .btn {
     background-color: var(--clr-accent);
     color: var(--clr-light);
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--clr-dark);
 }
 
 
