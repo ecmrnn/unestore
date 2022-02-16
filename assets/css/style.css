@@ -102,6 +102,7 @@ header > .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .product {
@@ -135,7 +136,10 @@ header > .container{
 
 .input__search {
     text-transform: uppercase;
-    padding-left: 1em;
+    padding-left: 3em;
+    background-image: url('../images/products/search-btn.png');
+    background-position: center;
+    background-size: contain;
     background-color: hsl(0, 0%, 90%);
 }
 
