@@ -3,7 +3,7 @@
 function searchProduct() {
     // Declaring Variables
     var input, list, product;
-    input = document.getElementById("searchInput").value;
+    input = document.getElementById("searchInput").value.toLowerCase();
     list = document.getElementsByClassName("product");
 
     for (i = 0; i < list.length; i++) {
