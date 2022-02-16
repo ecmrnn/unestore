@@ -33,9 +33,9 @@
 }
 
 :root {
-    --clr-accent: hsl(334, 100%, 50%);
+    --clr-accent: hsl(26, 100%, 50%);
     --clr-light: hsl(0, 0%, 100%);
-    --clr-dark: hsl(334, 100%, 40%);
+    --clr-dark: hsl(26, 100%, 40%);
 }
 
 :focus {
@@ -45,6 +45,7 @@
 
 img {
     width: 25%;
+    height: 25%;
     display: block;
     border-radius: 0.25em;
 }
