@@ -43,6 +43,11 @@
     outline: none;
 }
 
+img {
+    width: 25%;
+    display: block;
+}
+
 /* ================= */
 /*    TYPOGRAPHY     */
 /* ================= */
@@ -80,6 +85,20 @@ p {
 header > .container{
     border-bottom: 1px dashed var(--clr-accent);
     text-align: center;
+}
+
+.product {
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.25em hsl(0, 0%, 80%);
+}
+
+.product__desc > span {
+    display: block;
 }
 
 /* ================= */
