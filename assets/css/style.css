@@ -46,6 +46,7 @@
 img {
     width: 25%;
     display: block;
+    border-radius: 0.25em;
 }
 
 /* ================= */
@@ -68,6 +69,17 @@ p {
 
 .header__desc {
     margin-bottom: 2em;
+}
+
+.product__title {
+    color: var(--clr-accent);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product__price {
+    font-size: .875em;
 }
 
 /* ================= */
