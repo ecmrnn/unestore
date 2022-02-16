@@ -20,9 +20,8 @@
             <!-- Search Form -->
             <form action="" method="get" class="form--search">
                 <!-- Search Input -->
-                <input type="search" name="Search Input" id="searchInput" placeholder="Nescafe" class="input__search">
-                <!-- Search Button -->
-                <button id="searchBtn" class="btn btn--search"><i class="fa">&#xf002;</i>
+                <label for="searchInput">Search here:</label><br />
+                <input type="search" onkeyup="searchProduct()" name="Search Input" id="searchInput" placeholder="Nescafe" class="input__search">
                 </button>
             </form>
         </div>
@@ -35,24 +34,31 @@
             <h3>notice!</h3>
             <p>Ang mga presyo ng paninda rito ay nakabase lamang sa tindahan ni nanay. Maaaring iba ang presyo ng mga ito sa ibang tindahan, oki?</p>
             <!-- Lists of Product -->
-            <div class="product" id="alcohol">
+            <div class="product">
                 <img src="assets/images/products/sample-image.jpg" alt="Just a Sampe Image">
                 <div class="product__desc">
                     <span class="product__title">alcohol</span>
                     <span class="product__price">00.00Php</span>
                 </div>
             </div>
-            <div class="product" id="alcohol">
+            <div class="product">
                 <img src="assets/images/products/sample-image.jpg" alt="Just a Sampe Image">
                 <div class="product__desc">
                     <span class="product__title">hand sanitizer</span>
                     <span class="product__price">00.00Php</span>
                 </div>
             </div>
-            <div class="product" id="alcohol">
+            <div class="product">
                 <img src="assets/images/products/sample-image.jpg" alt="Just a Sampe Image">
                 <div class="product__desc">
                     <span class="product__title">face mask</span>
+                    <span class="product__price">00.00Php</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="assets/images/products/sample-image.jpg" alt="Just a Sampe Image">
+                <div class="product__desc">
+                    <span class="product__title">Mighty</span>
                     <span class="product__price">00.00Php</span>
                 </div>
             </div>

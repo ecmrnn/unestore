@@ -63,13 +63,13 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p, label {
     font-size: .875em;
-    
 }
 
 .header__desc {
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .product__title {
@@ -97,7 +97,9 @@ p {
 
 header > .container{
     border-bottom: 1px dashed var(--clr-accent);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product {
@@ -130,6 +132,7 @@ header > .container{
 }
 
 .input__search {
+    padding-left: 1em;
     background-color: hsl(0, 0%, 90%);
 }
 
@@ -156,8 +159,16 @@ header > .container{
     body {
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: var(--clr-accent);
+    }
+    main {
+        background-color: var(--clr-light);
+        height: 464.367px;
+        overflow: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
     }
 }
