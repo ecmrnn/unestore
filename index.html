@@ -22,7 +22,6 @@
                 <!-- Search Input -->
                 <label for="searchInput">Search Here:</label><br />
                 <input type="search" onkeyup="searchProduct()" name="Search Input" id="searchInput" placeholder="Nescafe" class="input__search">
-                </button>
             </form>
         </div>
     </header>
@@ -299,14 +298,14 @@
                 </div>
                 <div class="product">
                     <div class="product__desc">
-                        <span class="product__title">Kwatro Kantos</span>
+                        <span class="product__title">Kwatro Kantos <i class="tags">4x4 4 by 4</i> </span>
                         <span class="product__price">120.00Php</span>
                     </div>
                 </div>
                 <!-- --L -->
                 <div class="product">
                     <div class="product__desc">
-                        <span class="product__title">Liver Spread</span>
+                        <span class="product__title">Liver Spread <i class="tags">reno</i> </span>
                         <span class="product__price">28.00Php</span>
                     </div>
                 </div>
@@ -592,7 +591,12 @@
             </div>
         </div>
     </main>
-        
+    
+    <!-- Color Toggle -->
+    <div class="switch__mode">
+        <!-- Toggle Button -->
+        <a class="btn btn--toggle"><i class="fa">&#xf5aa;</i></a>
+    </div>
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
 </body>

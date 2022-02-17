@@ -22,3 +22,27 @@ function searchProduct() {
         }
     }
 }
+
+var counter = 0;
+var switchToggle = document.getElementsByClassName("btn--toggle");
+var image = document.getElementById("searchInput");
+
+
+switchToggle[0].addEventListener('click', ()=> {
+        
+        if(counter == 0) {
+            document.documentElement.style.setProperty('--clr-accent', 'hsl(350, 100%, 65%)')
+            image.style.backgroundImage = "url('../images/products/search-btn.png')";
+            counter++;
+        } else if (counter == 1){
+            document.documentElement.style.setProperty('--clr-accent', 'hsl(26, 100%, 50%)')
+            document.documentElement.style.setProperty('--clr-light', 'hsl(200, 6%, 10%)')
+            document.documentElement.style.setProperty('--clr-dark', 'hsl(0, 0%, 100%)')
+            
+            counter++;
+        } else {
+            counter = 0;
+            document.documentElement.style.setProperty('--clr-light', 'hsl(0, 0%, 100%)')
+            document.documentElement.style.setProperty('--clr-dark', 'hsl(200, 6%, 10%)')
+        }
+    })
