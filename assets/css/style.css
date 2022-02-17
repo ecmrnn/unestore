@@ -198,6 +198,10 @@ header > .container{
     background-color: hsl(0, 0%, 90%);
 }
 
+.leni {
+    background-image: url('../images/products/search-btn-leni.png');
+}
+
 .input__search:focus::placeholder {
     color: transparent;
 }
