@@ -5,7 +5,7 @@ function searchProduct() {
     var input, list, product, empty, test, i;
     input = document.getElementById("searchInput").value.toLowerCase();
     list = document.getElementsByClassName("product");
-    empty = document.getElementsByClassName("product__empty");
+    empty = document.getElementsByClassName("empty");
 
     for (i = 0; i < list.length; i++) {
         product = list[i].getElementsByClassName("product__title")[0];
@@ -16,7 +16,9 @@ function searchProduct() {
             list[i].style.display = "none";
         }
         if (i == list.length - 1 && test != true) { 
-            empty[0].style.display = "flex";
+            empty[0].style.display = "block";
+        } else {
+            empty[0].style.display = "none";
         }
     }
 }

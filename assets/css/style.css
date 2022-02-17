@@ -69,20 +69,28 @@ p, label {
     font-size: .875em;
 }
 
+.fa {
+    padding: 1em;
+    border-radius: calc(var(--bradius) / 3);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
 .header__desc {
     margin-bottom: 2em;
     text-align: center;
 }
 
-.product__title {
+.product__title, .empty__head {
     color: var(--clr-accent);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.product__price {
+.product__price, .empty__body {
     font-size: .875em;
+    display: block;
 }
 
 /* ================= */
@@ -114,7 +122,7 @@ header > .container{
     gap: 1em;
 }
 
-.product {
+.product, .empty {
     padding: 1em;
     display: flex;
     gap: 1em;
@@ -127,14 +135,23 @@ header > .container{
     display: block;
 }
 
-.product__empty {
+.empty {
     display: none;
-    flex-direction: column;
+}
+
+.product__empty {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 /* ================= */
 /*     UTILITIES     */
 /* ================= */
+
+.show {
+    display: block;
+}
 
 /* ================= */
 /*    COMPONENTS     */
@@ -160,17 +177,6 @@ header > .container{
     color: transparent;
 }
 
-.btn {
-    background-color: var(--clr-accent);
-    color: var(--clr-light);
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: var(--clr-dark);
-}
-
-
 /* ================= */
 /*   MEDIA QUERIES   */
 /* ================= */
@@ -193,6 +199,7 @@ header > .container{
 
         background-color: var(--clr-light);
     }
+
     body {
         height: 100vh;
         display: flex;
@@ -201,19 +208,27 @@ header > .container{
         align-items: center;
         background-color: var(--clr-accent);
     }
+
+    header {
+        background-color: transparent;
+    }
+
     header > .container{
         border-radius: var(--bradius) var(--bradius) 0 0;
     }
+
     main {
         padding: 2em 0;
         background-color: var(--clr-light);
         border-radius: 0 0 var(--bradius) var(--bradius);
     }
+
     main > .container {
         padding: 0 2em;
         height: 28em;
         
         background-color: var(--clr-light);
+
         overflow: auto;
         overflow-x: hidden;
         scrollbar-width: thin;
