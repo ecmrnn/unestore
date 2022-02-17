@@ -156,6 +156,10 @@ header > .container{
     display: block;
 }
 
+.tags {
+    visibility: hidden;
+}
+
 /* ================= */
 /*    COMPONENTS     */
 /* ================= */
