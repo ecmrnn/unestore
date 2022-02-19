@@ -32,13 +32,14 @@ switchToggle[0].addEventListener('click', ()=> {
         if(counter == 0) {
             document.documentElement.style.setProperty('--clr-accent', 'hsl(350, 100%, 65%)')
             image.classList.add("leni");
+            document.body.classList.add("body__leni");
             counter++;
         } else if (counter == 1){
             image.classList.remove("leni");
+            document.body.classList.remove("body__leni");
             document.documentElement.style.setProperty('--clr-accent', 'hsl(26, 100%, 50%)')
             document.documentElement.style.setProperty('--clr-light', 'hsl(200, 6%, 10%)')
             document.documentElement.style.setProperty('--clr-dark', 'hsl(0, 0%, 100%)')
-            
             counter++;
         } else {
             counter = 0;
