@@ -214,7 +214,16 @@ header > .container{
 }
 
  .btn {
-     cursor: pointer;
+    cursor: pointer;
+ }
+
+ .input__search--dark {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 15%);
+ }
+
+ .product--dark {
+    box-shadow: 0 0 0.25em hsl(0, 0%, 30%);
  }
 
 /* ================= */

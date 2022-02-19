@@ -26,6 +26,8 @@ function searchProduct() {
 var counter = 0;
 var switchToggle = document.getElementsByClassName("btn--toggle");
 var image = document.getElementById("searchInput");
+var darkInput = document.getElementsByClassName("input__search");
+var darkProd = document.getElementsByClassName("product");
 
 switchToggle[0].addEventListener('click', ()=> {
         
@@ -40,10 +42,20 @@ switchToggle[0].addEventListener('click', ()=> {
             document.documentElement.style.setProperty('--clr-accent', 'hsl(26, 100%, 50%)')
             document.documentElement.style.setProperty('--clr-light', 'hsl(200, 6%, 10%)')
             document.documentElement.style.setProperty('--clr-dark', 'hsl(0, 0%, 100%)')
+            darkInput[0].classList.add("input__search--dark");
+            for(let x=0; x < darkProd.length; x++) {
+                darkProd[x].classList.add("product--dark");
+            }
+            
+            
             counter++;
         } else {
             counter = 0;
+            darkInput[0].classList.remove("input__search--dark");
             document.documentElement.style.setProperty('--clr-light', 'hsl(0, 0%, 100%)')
             document.documentElement.style.setProperty('--clr-dark', 'hsl(200, 6%, 10%)')
+            for(let x=0; x < darkProd.length; x++) {
+                darkProd[x].classList.remove("product--dark");
+            }
         }
     })
